@@ -25,13 +25,15 @@ const App = () => {
     setNewTask(inputValue);
   };
   const newId = array => {
-    let i = array.length - 1;
-    let max = 0;
-    while (i) {
-      if (array[i].id > max) max = array[i].id;
-      i--;
-    }
-    return max + 1;
+    if (array.length) {
+      let i = array.length - 1;
+      let max = 0;
+      while (i) {
+        if (array[i].id > max) max = array[i].id;
+        i--;
+      }
+      return max + 1;
+    } else return 1;
   };
 
   const addNewTask = () => {
