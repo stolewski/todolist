@@ -1,0 +1,36 @@
+.todo_item {
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  padding: 15px 25px;
+  background-color: #eee;
+
+  & input {
+    margin-right: 20px;
+  }
+
+  & .description {
+    font-size: 20px;
+    color: darkblue;
+  }
+  & .desc_checked {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 20px;
+  }
+  & span {
+    display: none;
+    font-size: 20px;
+  }
+  &:hover {
+    & span {
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}
