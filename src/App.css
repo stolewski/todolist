@@ -3,11 +3,12 @@
 }
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .input_wrapper {
   display: flex;
-  width: 350px;
+  max-width: 350px;
   align-items: center;
   margin: 0 auto;
 }

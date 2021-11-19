@@ -26,10 +26,10 @@ const App = () => {
   };
   const newId = array => {
     if (array.length) {
-      let i = array.length - 1;
+      let i = array.length;
       let max = 0;
       while (i) {
-        if (array[i].id > max) max = array[i].id;
+        if (array[i - 1].id > max) max = array[i - 1].id;
         i--;
       }
       return max + 1;
