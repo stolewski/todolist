@@ -1,7 +1,7 @@
 const todosData = [
   {
     id: 1,
-    text: 'Take a cup og hot coffee',
+    text: 'Take a cup of hot coffee',
     completed: true,
   },
   {
@@ -12,7 +12,7 @@ const todosData = [
   {
     id: 3,
     text: 'Meet with friends',
-    completed: true,
+    completed: false,
   },
 ];
 
