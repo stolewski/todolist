@@ -10,14 +10,14 @@ const Navbar = () => {
           className='navbar-brand'
           target='_blank'
           rel='noreferrer'
-          href='https://twitter.com'
+          href='https://instagram.com/stolewski'
         >
           <img src={logo} alt={logo} />
         </a>
         <div>
           <ul className='navbar-nav'>
             <li className='nav-item'>
-              <NavLink className='nav-link' to='/'>
+              <NavLink className='nav-link' to='/todolist'>
                 Home
               </NavLink>
             </li>
