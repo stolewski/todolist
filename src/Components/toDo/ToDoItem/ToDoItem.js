@@ -3,7 +3,7 @@ import './ToDoItem.scss';
 
 const ToDoItem = props => {
   return (
-    <div className='todo_item'>
+    <li className='todo_item'>
       <input
         type='checkbox'
         onChange={props.handleChange}
@@ -13,7 +13,7 @@ const ToDoItem = props => {
         {props.description}
       </label>
       <span onClick={props.removeItem}>&times;</span>
-    </div>
+    </li>
   );
 };
 

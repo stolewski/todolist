@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  background: cornflowerblue;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.alert-enter {
+  opacity: 0;
+}
+.alert-enter-active {
+  transition: opacity 500ms ease-out;
+  opacity: 1;
+}
+
+.alert-exit-active {
+  transition: opacity 350ms ease-out;
+  opacity: 0;
+}
+
+.anime-exit-active {
+  animation: anime 800ms ease-out forwards;
+}
+.anime-enter-active {
+  animation: anime 800ms ease-in alternate-reverse;
+}
+
+@keyframes anime {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
