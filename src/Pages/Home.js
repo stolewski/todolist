@@ -50,8 +50,14 @@ const Home = () => {
       setNewTask('');
       setTodoItems(updList);
       alert.show('Your task was added', 'success');
+      setTimeout(() => {
+        alert.hide();
+      }, 5000);
     } else {
       alert.show('Type your task, please');
+      setTimeout(() => {
+        alert.hide();
+      }, 5000);
     }
   };
 
@@ -61,6 +67,9 @@ const Home = () => {
     const result = newArray.filter((el, ind) => ind !== index);
     setTodoItems(result);
     alert.show('Task was deleted', 'danger');
+    setTimeout(() => {
+      alert.hide();
+    }, 5000);
   };
 
   const activeTasks = todoItems.filter(task => task.completed === false);
