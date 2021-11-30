@@ -100,7 +100,11 @@ const Home = () => {
         />
         <input className='input_btn' type='submit' value='Add' />
       </form>
-      <TransitionGroup component='ul'>{finalTasks}</TransitionGroup>
+      {!finalTasks.length ? (
+        <h3>You have no tasks to do! :)</h3>
+      ) : (
+        <TransitionGroup component='ul'>{finalTasks}</TransitionGroup>
+      )}
     </div>
   );
 };
