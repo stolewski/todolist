@@ -24,7 +24,7 @@ const Home = () => {
   };
   const inputHandler = e => {
     let inputValue = e.target.value;
-    setNewTask(inputValue);
+    if (inputValue.trim()) setNewTask(inputValue);
   };
   const newId = array => {
     if (array.length) {
